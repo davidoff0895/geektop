@@ -1,0 +1,55 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+	.main-menu
+		display: none
+		padding: 20px
+	.m-menu-btn
+		display: block
+
+// ≥768px
++media-breakpoint-down(sm)
+	.logo
+		font-size: 19px
+		padding-left: math.div($gutter, 2)
+		line-height: 65px
+	.top-line__search
+		padding:
+			left: 0
+			right: 0
+		&__icon
+			right: 23px
+	.container-fluid
+		padding: 0 math.div($gutter, 2)
+	.no-gutters
+		.section__pattern
+			margin-bottom: math.div($gutter, 2)
+	.section
+		padding-bottom: math.div($gutter, 2)
+		&__news
+			margin: math.div($gutter, 2) 0 0
+
+// ≥576px
++media-breakpoint-down(xs)
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
