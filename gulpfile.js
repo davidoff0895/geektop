@@ -60,11 +60,9 @@ gulp.task('rsync', function() {
 	}))
 });
 
-if (gulpversion == 4) {
-	gulp.task('watch', function() {
-		gulp.watch('app/'+syntax+'/**/*.'+syntax+'', gulp.parallel('styles'));
-		gulp.watch(['libs/**/*.js', 'app/js/modules/*.js'], gulp.parallel('scripts'));
-		gulp.watch('app/*.html', gulp.parallel('code'))
-	});
-	gulp.task('default', gulp.parallel('styles', 'scripts', 'browser-sync', 'watch'));
-}
+gulp.task('watch', function() {
+	gulp.watch('app/'+syntax+'/**/*.'+syntax+'', gulp.parallel('styles'));
+	gulp.watch(['libs/**/*.js', 'app/js/modules/*.js'], gulp.parallel('scripts'));
+	gulp.watch('app/*.html', gulp.parallel('code'))
+});
+gulp.task('default', gulp.parallel('styles', 'scripts', 'browser-sync', 'watch'));

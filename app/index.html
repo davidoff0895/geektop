@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="utf-8">
     <base href="/">
@@ -17,11 +17,12 @@
 <header id="top-line" class="top-line">
     <div class="container-fluid top-line__wrap">
         <a href="/" class="logo logo-literal">GeekT<span class="logo__letter">O</span>P</a>
-        <button class="m-menu-btn" onclick="toggleMenu()"><i class="fa fa-bars"></i> Menu</button>
+        <button class="m-menu-btn" onclick="toggleMenu()"><i class="fa fa-bars"></i></button>
         <nav id="top-menu" class="main-menu top-menu">
             <ul class="main-menu__block">
-                <li class="main-menu__block__item active"><a class="main-menu__block__item__link"
-                                                             href="#">Электроника</a></li>
+                <li class="main-menu__block__item active">
+                    <a class="main-menu__block__item__link" href="#">Электроника</a>
+                </li>
                 <li class="main-menu__block__item"><a class="main-menu__block__item__link" href="#">Новости IT</a></li>
                 <li class="main-menu__block__item"><a class="main-menu__block__item__link" href="#">Обзоры</a></li>
                 <li class="main-menu__block__item"><a class="main-menu__block__item__link" href="#">Лайфхаки</a></li>
@@ -44,12 +45,12 @@
         </div>
     </div>
 </header>
-<section class="section">
+<section class="section first-section">
     <div class="container-fluid">
         <div class="row no-gutters g-0">
             <div class="col-md-6">
                 <div class="section__pattern">
-                    <div class="section__pattern__overlay">
+                    <div class="section__pattern__overlay section-img">
                         <div class="section__pattern__overlay__content">
                             <h3 class="section__pattern__overlay__content__title">
                                 <a
@@ -62,10 +63,10 @@
                             <div class="section__pattern__overlay__content__social">
                                 <div class="section__pattern__overlay__content__social__comments"
                                      title="Количество комментариев">
-                                    <i class="fa fa-comments"></i>
+                                    <i class="fa fa-comments section__comments__icon"></i>
                                     <a
                                             href="#disqus_thread"
-                                            class="section__pattern__overlay__content__social__comments__count"
+                                            class="section__comments__count"
                                     >
                                         26
                                     </a>
@@ -89,7 +90,7 @@
             </div>
             <div class="col-md-6">
                 <div class="section__pattern">
-                    <div class="section__pattern__overlay">
+                    <div class="section__pattern__overlay section-img">
                         <div class="section__pattern__overlay__content">
                             <h3 class="section__pattern__overlay__content__title">
                                 <a
@@ -102,10 +103,10 @@
                             <div class="section__pattern__overlay__content__social">
                                 <div class="section__pattern__overlay__content__social__comments"
                                      title="Количество комментариев">
-                                    <i class="fa fa-comments"></i>
+                                    <i class="fa fa-comments section__comments__icon"></i>
                                     <a
                                             href="#disqus_thread"
-                                            class="section__pattern__overlay__content__social__comments__count"
+                                            class="section__comments__count"
                                     >
                                         26
                                     </a>
@@ -129,7 +130,7 @@
             </div>
             <div class="col-md-4">
                 <div class="section__pattern">
-                    <div class="section__pattern__overlay">
+                    <div class="section__pattern__overlay section-img">
                         <div class="section__pattern__overlay__content">
                             <h3 class="section__pattern__overlay__content__title">
                                 <a
@@ -142,10 +143,10 @@
                             <div class="section__pattern__overlay__content__social">
                                 <div class="section__pattern__overlay__content__social__comments"
                                      title="Количество комментариев">
-                                    <i class="fa fa-comments"></i>
+                                    <i class="fa fa-comments section__comments__icon"></i>
                                     <a
                                             href="#disqus_thread"
-                                            class="section__pattern__overlay__content__social__comments__count"
+                                            class="section__comments__count"
                                     >
                                         26
                                     </a>
@@ -169,7 +170,7 @@
             </div>
             <div class="col-md-4">
                 <div class="section__pattern">
-                    <div class="section__pattern__overlay">
+                    <div class="section__pattern__overlay section-img">
                         <div class="section__pattern__overlay__content">
                             <h3 class="section__pattern__overlay__content__title">
                                 <a
@@ -182,10 +183,10 @@
                             <div class="section__pattern__overlay__content__social">
                                 <div class="section__pattern__overlay__content__social__comments"
                                      title="Количество комментариев">
-                                    <i class="fa fa-comments"></i>
+                                    <i class="fa fa-comments section__comments__icon"></i>
                                     <a
                                             href="#disqus_thread"
-                                            class="section__pattern__overlay__content__social__comments__count"
+                                            class="section__comments__count"
                                     >
                                         26
                                     </a>
@@ -209,7 +210,7 @@
             </div>
             <div class="col-md-4">
                 <div class="section__pattern">
-                    <div class="section__pattern__overlay">
+                    <div class="section__pattern__overlay section-img">
                         <div class="section__pattern__overlay__content">
                             <h3 class="section__pattern__overlay__content__title">
                                 <a
@@ -222,10 +223,10 @@
                             <div class="section__pattern__overlay__content__social">
                                 <div class="section__pattern__overlay__content__social__comments"
                                      title="Количество комментариев">
-                                    <i class="fa fa-comments"></i>
+                                    <i class="fa fa-comments section__comments__icon"></i>
                                     <a
                                             href="#disqus_thread"
-                                            class="section__pattern__overlay__content__social__comments__count"
+                                            class="section__comments__count"
                                     >
                                         26
                                     </a>
@@ -250,63 +251,63 @@
         </div>
     </div>
 </section>
-<section class="section second-section">
+<section class="section">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-8">
-                <h2><a href="#">Новости IT</a></h2>
-                <div class="row">
+                <h2 class="section__header"><a href="#">Новости IT</a></h2>
+                <div class="row g-0">
                     <div class="col-md-6 section__news">
                         <div class="section__pattern section__news__pattern">
-                            <a href="#" class="section__pattern__overlay section__news__pattern__overlay">
-									<span class="section__news__pattern__overlay__content">
-										<h3 class="section__news__pattern__overlay__content__title">Золотистый iPhone предыдущего поколения положили на тыкву</h3>
-										<span class="section__news__pattern__overlay__content__date">
-											21/06/2017
-										</span>
-									</span>
+                            <a href="#" class="section__pattern__overlay section__news__pattern__overlay section-img">
+                                <span class="section__news__pattern__overlay__content">
+                                    <h3 class="section__news__pattern__overlay__content__title">Золотистый iPhone предыдущего поколения положили на тыкву</h3>
+                                    <span class="section__date">
+                                        21/06/2017
+                                    </span>
+                                </span>
                             </a>
                         </div>
                     </div>
                     <div class="col-md-6 section__news">
                         <div class="section__pattern section__news__pattern">
-                            <a href="#" class="section__pattern__overlay section__news__pattern__overlay">
-									<span class="section__news__pattern__overlay__content">
-										<h3 class="section__news__pattern__overlay__content__title">
-											Программист из Урюково посадил зрение после 22-х лет работы
-										</h3>
-										<span class="section__news__pattern__overlay__content__date">
-											21/06/2017
-										</span>
-									</span>
+                            <a href="#" class="section__pattern__overlay section__news__pattern__overlay section-img">
+                                <span class="section__news__pattern__overlay__content">
+                                    <h3 class="section__news__pattern__overlay__content__title">
+                                        Программист из Урюково посадил зрение после 22-х лет работы
+                                    </h3>
+                                    <span class="section__date">
+                                        21/06/2017
+                                    </span>
+                                </span>
                             </a>
                         </div>
                     </div>
                     <div class="col-md-6 section__news">
                         <div class="section__pattern section__news__pattern">
-                            <a href="#" class="section__pattern__overlay section__news__pattern__overlay">
-									<span class="section__news__pattern__overlay__content">
-										<h3 class="section__news__pattern__overlay__content__title">
-											Обнаружена первая в мире белая виниловая пластинка без дорожек
-										</h3>
-										<span class="section__news__pattern__overlay__content__date">
-											21/06/2017
-										</span>
-									</span>
+                            <a href="#" class="section__pattern__overlay section__news__pattern__overlay section-img">
+                                <span class="section__news__pattern__overlay__content">
+                                    <h3 class="section__news__pattern__overlay__content__title">
+                                        Обнаружена первая в мире белая виниловая пластинка без дорожек
+                                    </h3>
+                                    <span class="section__date">
+                                        21/06/2017
+                                    </span>
+                                </span>
                             </a>
                         </div>
                     </div>
                     <div class="col-md-6 section__news">
                         <div class="section__pattern section__news__pattern">
-                            <a href="#" class="section__pattern__overlay section__news__pattern__overlay">
-									<span class="section__news__pattern__overlay__content">
-										<h3 class="section__news__pattern__overlay__content__title">
-											Человек впервые в мире сделал снимок моря в поле
-										</h3>
-										<span class="section__news__pattern__overlay__content__date">
-											21/06/2017
-										</span>
-									</span>
+                            <a href="#" class="section__pattern__overlay section__news__pattern__overlay section-img">
+                                <span class="section__news__pattern__overlay__content">
+                                    <h3 class="section__news__pattern__overlay__content__title">
+                                        Человек впервые в мире сделал снимок моря в поле
+                                    </h3>
+                                    <span class="section__date">
+                                        21/06/2017
+                                    </span>
+                                </span>
                             </a>
                         </div>
                     </div>
@@ -314,7 +315,232 @@
             </div>
             <div class="col-md-4">
                 <div class="section__aside">
-                    <img src="img/vk-witget.jpg" alt="vk" class="section__aside__img">
+                    <img src="img/vk-witget.jpg" alt="vk" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section dark-section">
+    <div class="container-fluid">
+        <h2 class="section__header"><a class="dark-section__title__link" href="#">Обзоры</a></h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="dark-section__item">
+                    <a
+                        href="#"
+                        class="dark-section__item__overlay section-img img-responsive img-width"
+                    ></a>
+                    <div class="dark-section__item__meta">
+                        <div class="dark-section__item__meta__comments" title="Колличество комментариев">
+                            <span class="section__date">25/12/2017</span>
+                            <i class="fa fa-comments dark-section__item__meta__comments__icon"></i>
+                            <a
+                                    href="#disqus_thread"
+                                    class="section__comments__count dark-section__item__meta__comments__count"
+                            >
+                                26
+                            </a>
+                        </div>
+                    </div>
+                    <h4 class="dark-section__item__title">
+                        <a class="dark-section__item__link" href="#">
+                            Новый смартфон с функцией настольного пылесоса всколыхнул сообщества гиков по всему миру
+                        </a>
+                    </h4>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="dark-section__item">
+                    <a
+                        href="#"
+                        class="dark-section__item__overlay section-img img-responsive img-width"
+                    ></a>
+                    <div class="dark-section__item__meta">
+                        <div class="dark-section__item__meta__comments" title="Колличество комментариев">
+                            <span class="section__date">25/12/2017</span>
+                            <i class="fa fa-comments dark-section__item__meta__comments__icon"></i>
+                            <a
+                                    href="#disqus_thread"
+                                    class="section__comments__count dark-section__item__meta__comments__count"
+                            >
+                                26
+                            </a>
+                        </div>
+                    </div>
+                    <h4 class="dark-section__item__title">
+                        <a class="dark-section__item__link" href="#">
+                            Sony выпустили новую полупрофессиональную камеру с высоким разрешением
+                        </a>
+                    </h4>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="dark-section__item">
+                    <a
+                        href="#"
+                        class="dark-section__item__overlay section-img img-responsive img-width"
+                    ></a>
+                    <div class="dark-section__item__meta">
+                        <div class="dark-section__item__meta__comments" title="Колличество комментариев">
+                            <span class="section__date">25/12/2017</span>
+                            <i class="fa fa-comments dark-section__item__meta__comments__icon"></i>
+                            <a
+                                    href="#disqus_thread"
+                                    class="section__comments__count dark-section__item__meta__comments__count"
+                            >
+                                26
+                            </a>
+                        </div>
+                    </div>
+                    <h4 class="dark-section__item__title">
+                        <a class="dark-section__item__link" href="#">
+                            Флагман от Samsung 2017 года продолжает радовать своих покупателей новыми функциями
+                        </a>
+                    </h4>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="dark-section__item">
+                    <a
+                        href="#"
+                        class="dark-section__item__overlay section-img img-responsive img-width"
+                    ></a>
+                    <div class="dark-section__item__meta">
+                        <div class="dark-section__item__meta__comments" title="Колличество комментариев">
+                            <span class="section__date">25/12/2017</span>
+                            <i class="fa fa-comments dark-section__item__meta__comments__icon"></i>
+                            <a
+                                    href="#disqus_thread"
+                                    class="section__comments__count dark-section__item__meta__comments__count"
+                            >
+                                26
+                            </a>
+                        </div>
+                    </div>
+                    <h4 class="dark-section__item__title">
+                        <a class="dark-section__item__link" href="#">
+                            Bubble gum начал производство разноцветных наклеек, пожевав которые вы впадаете в депрессию
+                        </a>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section fourth-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="section__header"><a href="#">Лайфхаки</a></h2>
+            </div>
+            <div class="col-md-8 col-sm-6">
+                <div class="row no-gutters g-0">
+                    <div class="col-md-6">
+                        <div class="section__pattern">
+                            <div class="section__pattern__overlay section-img">
+                                <div class="section__pattern__overlay__content">
+                                    <h3 class="section__pattern__overlay__content__title">
+                                        <a
+                                            class="section__pattern__overlay__content__title__link"
+                                            href="#"
+                                        >
+                                            Как сфотографировать себя на телефон с зеркалкой
+                                        </a>
+                                    </h3>
+                                    <div class="section__pattern__overlay__content__social">
+                                        <div class="section__comments" title="Колличество комментариев">
+                                            <i class="fa fa-comments section__comments__icon"></i>
+                                            <a href="#disqus_thread" class="section__comments__count">26</a>
+                                            <span class="section__date">
+                                        21/06/2017
+                                    </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="section__pattern">
+                            <div class="section__pattern__overlay section-img">
+                                <div class="section__pattern__overlay__content">
+                                    <h3 class="section__pattern__overlay__content__title">
+                                        <a
+                                            class="section__pattern__overlay__content__title__link"
+                                            href="#"
+                                        >
+                                            Упрощаем жизнь наушникам, вешаем их на мониторы
+                                        </a>
+                                    </h3>
+                                    <div class="section__pattern__overlay__content__social">
+                                        <div class="section__comments" title="Колличество комментариев">
+                                            <i class="fa fa-comments section__comments__icon"></i>
+                                            <a href="#disqus_thread" class="section__comments__count">26</a>
+                                            <span class="section__date">
+                                                21/06/2017
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="section__pattern">
+                            <div class="section__pattern__overlay section-img">
+                                <div class="section__pattern__overlay__content">
+                                    <h3 class="section__pattern__overlay__content__title">
+                                        <a
+                                            class="section__pattern__overlay__content__title__link"
+                                            href="#"
+                                        >
+                                            Как разложить фотоаппараты на столе и не запутаться
+                                        </a>
+                                    </h3>
+                                    <div class="section__pattern__overlay__content__social">
+                                        <div class="section__comments" title="Колличество комментариев">
+                                            <i class="fa fa-comments section__comments__icon"></i>
+                                            <a href="#disqus_thread" class="section__comments__count">26</a>
+                                            <span class="section__date">
+                                        21/06/2017
+                                    </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="section__pattern">
+                            <div class="section__pattern__overlay section-img">
+                                <div class="section__pattern__overlay__content">
+                                    <h3 class="section__pattern__overlay__content__title">
+                                        <a
+                                            class="section__pattern__overlay__content__title__link"
+                                            href="#"
+                                        >
+                                            Правильное подключение проводов к магнитофону
+                                        </a>
+                                    </h3>
+                                    <div class="section__pattern__overlay__content__social">
+                                        <div class="section__comments" title="Колличество комментариев">
+                                            <i class="fa fa-comments section__comments__icon"></i>
+                                            <a href="#disqus_thread" class="section__comments__count">26</a>
+                                            <span class="section__date">
+                                        21/06/2017
+                                    </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4  col-sm-6">
+                <div class="section__aside">
+                    <img class="img-responsive img-width" src="img/vertical.jpg" alt="alt">
                 </div>
             </div>
         </div>

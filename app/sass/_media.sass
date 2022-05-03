@@ -13,6 +13,12 @@
 		padding: 20px
 	.m-menu-btn
 		display: block
+	.dark-section
+		> div > div > div:last-of-type
+			.dark-section__item
+				margin-bottom: 0
+				padding-bottom: 0
+				border-bottom: none
 
 // ≥768px
 +media-breakpoint-down(sm)
@@ -35,7 +41,17 @@
 		padding-bottom: math.div($gutter, 2)
 		&__news
 			margin: math.div($gutter, 2) 0 0
-
+	.dark-section
+		&__item
+			margin-bottom: math.div($gutter, 2)
+			padding-bottom: $gutter
+			border-bottom: 1px solid rgba(#fff, .05)
+			&__meta, &__title
+				padding: 0 $gutter
+			&__overlay
+				margin-bottom: math.div($gutter, 2)
+			&__meta
+				margin-bottom: 5px
 // ≥576px
 +media-breakpoint-down(xs)
 
