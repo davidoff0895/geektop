@@ -290,6 +290,9 @@ a
 		font-size: 13px
 		color: $accent
 		font-family: baron-g, sans-serif
+	.right-date
+		color: #fff
+		margin-left: 20px
 	&__aside
 		margin-bottom: $gutter
 .first-section
@@ -372,7 +375,35 @@ a
 				&__content
 					&__social
 						margin-top: 1px
-		&__date
-			color: #ffffff
-			margin-left: 20px
+.fifth-section
+	&__big
+		margin-bottom: $gutter
+		.section
+			&__date
+				color: #a0a0a0
+				font-size: 13px
+			&__pattern__overlay
+				&::before
+					content: none
+				&__content
+					color: #a0a0a0
+					font-size: 13px
+					&__social
+						color: #a0a0a0
+						font-size: 13px
+					&__title__link
+						color: $text
+						margin-top: 5px
+						display: block
+						&:hover
+							color: $accent
+			&__comments__count
+				color: #a0a0a0
+				font-size: 12px
+			&__date
+				margin-left: 20px
+	&__small
+		.section__pattern__overlay
+			min-height: 230px
+			margin-bottom: $gutter
 @import "media"
