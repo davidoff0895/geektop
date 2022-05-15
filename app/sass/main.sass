@@ -49,6 +49,7 @@ a
 .top-line
 	background-color: $dark
 	height: 65px
+	margin-bottom: 73px
 	&__wrap
 		position: relative
 	&__search
@@ -85,7 +86,21 @@ a
 			&:hover
 				color: lighten(#5c6470, 10)
 
-
+.button
+	border: none
+	color: #ffffff
+	background-color: $accent
+	padding: 12px 40px
+	font-weight: 600
+	font-size: 14px
+	border-radius: 10em
+	outline: none
+	text-transform: uppercase
+	transition: background-color .1s ease
+	&:hover
+		background-color: lighten($accent, 5)
+	&:active
+		background-color: darken($accent, 5)
 .logo
 	font-family: baron-g, 'sans-serif'
 	color: #fff
@@ -153,7 +168,6 @@ a
 	overflow: hidden
 	margin-top: 70px
 	background-color: lighten($dark, 3)
-	border-top: lighten($dark, 5) 1px solid
 	transition: all .3s ease
 	.top-menu
 		display: block
@@ -169,13 +183,11 @@ a
 
 .section
 	background-color: #fafafa
-	padding: $gutter 0
+	padding: $gutter*2 0
 	&__header
 		margin-bottom: 20px
 	&__pattern
-		background-color: $dark
 		position: relative
-		display: block
 		&::before
 			content: ''
 			transition: opacity .25s ease, top .25s ease, left .25s ease, bottom .25s ease, right .25s ease
@@ -295,8 +307,6 @@ a
 		margin-left: 20px
 	&__aside
 		margin-bottom: $gutter
-.first-section
-	padding-top: 95px
 .likely-custom
 	display: inline-block
 	font-size: 12px
@@ -318,7 +328,6 @@ a
 		display: inline-block
 
 .dark-section
-	padding: 30px 0
 	background-color: $dark
 	&__title
 		&__link
@@ -367,7 +376,6 @@ a
 
 .fourth-section
 	background-color: #f5f5f5
-	padding-top: 30px
 	.section
 		&__pattern
 			&__overlay
@@ -406,4 +414,96 @@ a
 		.section__pattern__overlay
 			min-height: 230px
 			margin-bottom: $gutter
+.section-more
+	padding: $gutter*2
+	background: #f5f5f5
+.main-footer
+	background-color: $dark-blue
+	padding: 25px 0
+	border-bottom: 1px solid rgba(#fff, .1)
+	.social
+		padding: 15px 0 20px
+		&__block__item, &__block
+			margin: 0
+			padding: 0
+			list-style-type: none
+			text-align: center
+			&__item
+				display: inline-block
+				&__link
+					display: block
+					text-align: center
+					border: 1px solid rgba(#fff, .1)
+					border-radius: 10em
+					width: 52px
+					height: 52px
+					line-height: 50px
+					color: #ffffff
+					font-size: 24px
+					margin: 4px
+					transition: border-color .25s ease, opacity .25s ease
+					&__icon
+						transition: opacity .25s ease
+						opacity: .75
+					&:hover
+						border-color: rgba(#fff, .35)
+						.social__block__item__link__icon
+							opacity: 1
+.bottom-footer
+	background-color: $dark-blue
+	padding: 25px 0 35px
+	&__copy
+		color: rgba(#fff, .45)
+		font-size: 13px
+		font-family: baron-g, sans-serif
+	.logo
+		position: unset
+		padding-left: 0
+		color: rgba(#fff, .45)
+		font-size: 13px
+.footer-menu
+	.main-menu__block
+		&__item.active
+			text-decoration: underline
+			.main-menu__block__item__link
+				background-color: unset
+		&__item__link
+			font-size: 15px
+			padding: 0 10px
+			&:hover
+				text-decoration: underline
+				background-color: unset
+
+.sub-header.section__pattern
+	&::before
+		display: none
+.sub-header
+	.section__pattern
+		&__overlay
+			&::before
+				opacity: .25 !important
+	&__block
+		position: relative
+		color: #fff
+		background-color: rgba($dark, .8)
+		&__content
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			width: 80%
+			&__title
+				font-size: 30px
+				text-transform: uppercase
+				margin-bottom: 15px
+		&::before
+			content: ''
+			transition: opacity .25s ease, top .25s ease, left .25s ease, bottom .25s ease, right .25s ease
+			z-index: 1
+			position: absolute
+			border: #fff solid 1px
+			top: 10px
+			right: 10px
+			bottom: 10px
+			left: 10px
 @import "media"

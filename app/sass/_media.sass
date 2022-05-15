@@ -22,16 +22,20 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+	.first-section
+		margin-top: 70px
+	.top-line
+		margin-bottom: 0
+		&__search
+			padding:
+				left: 0
+				right: 0
+			&__icon
+				right: 23px
 	.logo
 		font-size: 19px
 		padding-left: math.div($gutter, 2)
 		line-height: 65px
-	.top-line__search
-		padding:
-			left: 0
-			right: 0
-		&__icon
-			right: 23px
 	.container-fluid
 		padding: 0 math.div($gutter, 2)
 	.no-gutters
@@ -41,6 +45,8 @@
 		padding-bottom: math.div($gutter, 2)
 		&__news
 			margin: math.div($gutter, 2) 0 0
+	.section-more
+		padding: $gutter*2
 	.dark-section
 		&__item
 			margin-bottom: math.div($gutter, 2)
